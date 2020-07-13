@@ -20,7 +20,7 @@ public class DependencyLookupDemo {
     public static void main(String[] args) {
         // 配置 XML 配置文件
         // 启动 spring 应用上下文
-        BeanFactory beanFactory = new ClassPathXmlApplicationContext("META-INF/dependency-lookup-context.xml");
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-lookup-context.xml");
 
         //----------根据名称查找-------------
         lookupInRealTime(beanFactory);
